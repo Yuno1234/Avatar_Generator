@@ -1,3 +1,16 @@
+firstname = "Yunosuke"
+lastname = "Arakawa"
+username = "Yuno1234"
+sum_deb = 0
+
+for letter in firstname and lastname and username:
+    sum_deb += ord(letter)
+    
+
+
+seed = sum_deb
+randomSeed(seed)
+
 size(500, 500)
 background('#e2e3d8')
 translate(width/2, height/2)
@@ -159,7 +172,6 @@ endShape()
 
 
 '''
-
 strokeWeight(1)
 circle(0, 0, 250)
 
@@ -172,11 +184,12 @@ circle_y = 0
 
 for i in range(1000):
     # random angle
-    alp = 2 * PI *random(0,1)
+    theta = 2 * PI *random(0,1)
     # random radius
     r = circle_r * random(0.5, 1)
     # calculating coordinates
-    x = r * cos(alp) + circle_x
-    y = r * sin(alp) + circle_y
+    x = r * cos(theta) + circle_x
+    y = r * sin(theta) + circle_y
     
     circle(x,y, 10)
+'''
