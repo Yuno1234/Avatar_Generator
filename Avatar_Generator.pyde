@@ -6,10 +6,10 @@ sum_deb = 0
 for letter in firstname and lastname and username:
     sum_deb += ord(letter)
     
-
-
 seed = sum_deb
 randomSeed(seed)
+
+
 
 size(500, 500)
 background('#e2e3d8')
