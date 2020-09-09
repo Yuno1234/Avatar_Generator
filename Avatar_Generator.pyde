@@ -1,6 +1,6 @@
 firstname = "Yunosuke"
 lastname = "Arakawa"
-username = "Yuno1234"
+username = "YUNO123"
 sum_deb = 0
 
 for letter in firstname and lastname and username:
